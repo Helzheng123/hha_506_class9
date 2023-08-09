@@ -1,10 +1,11 @@
-# import module1
-# import module1 as mod1 
-# from module1 import *
-from module1 import addition as add, subtraction as sub
+import sys
 
-output1 = add(5, 10)
-output2 = sub(5, 10)
+sys.path.append('/home/helen_zheng/hha_506_class9/modules')
+
+from modules.module1 import addition, subtraction
+
+output1 = addition(5, 10)
+output2 = subtraction(5, 10)
 
 print('Output 1: ', output1)
 print('Output 2: ', output2)
